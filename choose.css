@@ -1,0 +1,66 @@
+.half {
+    width: 100%;
+}
+
+.don {
+    float:left; 
+    width: 100%;
+    text-align: center;
+    background-color: #880E4F;
+    height: 650px;
+    color: aliceblue;
+    box-shadow: 5px 10px 5px 10px #888888;
+}
+
+h1{
+    font-size: 72px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+.don h2{
+    opacity: 0;
+}
+
+.don:hover{
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+.don:hover h1{
+    opacity: 0;
+}
+
+.don:hover h2{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.rec {
+float: right;
+    background-color: #76FF03;
+    text-align: center;
+    height: 650px;
+    width: 49%;
+    box-shadow: 5px 10px 5px 10px #888888;
+}
+
+.rec h2{
+    opacity: 0;
+}
+
+.rec:hover{
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+.rec:hover h1{
+    opacity: 0;
+}
+
+.rec:hover h2{
+    opacity: 1;
+    transition: .5s ease;
+}
