@@ -41,6 +41,29 @@
                     </div>
                 </div>
             </div>
+            <div class="jumbotron text-center">
+                <?php 
+					echo "<h1>RECEIVE $fName!</h1>"
+				?>
+                <h2>We are here for you!</h2>
+            </div>
+            <div class="main text-center">
+                <div class="itTags jumbotron-2" id="food">
+                    <div class="middle">
+                        <div class="bt">FOOD</div>
+                    </div>
+                </div>
+                <div class="itTags jumbotron-3" id="clothes">
+                    <div class="middle">
+                        <div class="bt">CLOTHES</div>
+                    </div>
+                </div>
+                <div class="itTags jumbotron-4 " id="misItems ">
+                    <div class="middle">
+                        <button class="bt">MSCELLANEOUS ITEMS</button>
+                    </div>
+                </div>
+            </div>
         </div>
 		<a href = "back/logOut.php">
 			<button class = "buttonReturn">
