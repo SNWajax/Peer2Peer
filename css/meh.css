@@ -46,7 +46,7 @@ h3{
     transition: .5s ease;
     opacity: 0.3;
 }
-
+/*
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -70,7 +70,7 @@ h3{
     margin-top: 150px;
 }
 
-
+*/
 
 /*my code above*/
 
@@ -966,7 +966,7 @@ input[type=text], input[type=password] {
 .jumbotron-4{
 	padding-top:160px;
 	padding-bottom:160px;
-	margin-bottom:30px;
+	/* margin-bottom:30px; */
 	color:#FFF;
 	background-image: url("../images/mi.jpg");
 	background-size: cover;

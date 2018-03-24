@@ -18,7 +18,7 @@
 				$statement = $conn->prepare("SELECT email FROM users WHERE email = '$email'");
 				$statement->execute();
 				if(($statement->fetch()) == false){
-					$statement = $conn->prepare("INSERT INTO users VALUES (null,'$email','$hashedPassword','$FName','$LName')");
+					$statement = $conn->prepare("INSERT INTO users VALUES ('$email','$hashedPassword','$FName','$LName')");
 					$statement->execute();
 					$_SESSION["error"] = "Account created.";
 					}
