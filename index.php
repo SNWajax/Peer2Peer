@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="loginStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/loginStyle.css">
 </head>
 <body>
     <div id="logo">
@@ -11,7 +11,6 @@
 		<div class="imgcontainer">
 			<img src="images/logo.png" alt="Avatar" class="avatar">
 		</div>
-
 		<div class="container">
 			<?php
 				session_start();

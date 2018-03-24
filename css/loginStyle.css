@@ -104,12 +104,14 @@ span.psw {
        width: 100%;
     }
 }
+
 html {
-  background: url(images/bg.jpg) no-repeat center center fixed;
+  background: url(../images/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
+
 #error{
     font-size:18px;
     color:#de0202;

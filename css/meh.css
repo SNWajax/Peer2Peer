@@ -1,3 +1,23 @@
+h3{
+    text-align:center;
+	color:antiquewhite;
+}
+
+.buttonReturn{
+	position:absolute;
+    top:15px;
+    right:15px;
+    font-size:12pt;
+	color: black; 
+	border: 2px solid #76FF03;
+	background-color: white; 
+	border-radius: 12px;
+}
+
+.buttonReturn:hover {
+    background-color: #888888;
+    color: #76FF03;
+}
 .itTags{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -907,7 +927,7 @@ input[type=text], input[type=password] {
 .jumbotron{
 	margin-bottom:30px;
 	color:aliceblue;
-	background-image: url("images/log.jpg");
+	background-image: url("../images/log.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
@@ -920,7 +940,7 @@ input[type=text], input[type=password] {
 	padding-bottom:160px;
 	margin-bottom:30px;
 	color:#FFF;
-	background-image: url("images/fd.jpg");
+	background-image: url("../images/fd.jpg");
 	background-size: cover;
 	background-position: 0% 50%;
 	background-repeat: no-repeat;
@@ -934,7 +954,7 @@ input[type=text], input[type=password] {
 	padding-bottom:160px;
 	margin-bottom:30px;
 	color:#FFF;
-	background-image: url("images/cl.jpg");
+	background-image: url("../images/cl.jpg");
 	background-size: cover;
 	background-position: 0% 50%;
 	background-repeat: no-repeat;
@@ -948,7 +968,7 @@ input[type=text], input[type=password] {
 	padding-bottom:160px;
 	margin-bottom:30px;
 	color:#FFF;
-	background-image: url("images/mi.jpg");
+	background-image: url("../images/mi.jpg");
 	background-size: cover;
 	background-position: 0% 50%;
 	background-repeat: no-repeat;

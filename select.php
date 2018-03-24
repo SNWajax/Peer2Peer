@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="select.css">
+    <link rel="stylesheet" type="text/css" href="css/select.css">
 </head>
 <body background = "images/reg.jpg">
     <div id="logo">

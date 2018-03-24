@@ -1,12 +1,27 @@
-<!DOCTYPE html>
+<?php 
+	session_start();
+	if(isset($_SESSION["email"])){   
+		$conn = new PDO("mysql:host=localhost;dbname=peer2peer", "root", "");
+		$cmd = "SELECT fName FROM users WHERE email='$_SESSION[email]'";
+		$statement = $conn->prepare($cmd);
+		$statement->execute();
+		$result = $statement->fetch();
+		$fName = $result["fName"];
+	}
+	else
+		header("Location: index.php");
+?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="meh.css">
+        <link rel="stylesheet" type="text/css" href="css/meh.css">
     </head>
-    <body>
+    <body><div class = "headline">  
+        </div>
         <div class="bdy-main">
             <div class="jumbotron text-center">
-                <h1>DONATE</h1>
+                <?php 
+					echo "<h1>DONATE $fName!</h1>"
+				?>
                 <h2>That's what keeps us, US!</h2>
             </div>
             <div class="main text-center">
@@ -27,5 +42,10 @@
                 </div>
             </div>
         </div>
+		<a href = "back/logOut.php">
+			<button class = "buttonReturn">
+				Log out
+			</button>
+		</a>
     </body>
 </html>

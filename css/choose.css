@@ -3,10 +3,10 @@
 }
 .don {
     float:left; 
-    width: 100%;
+    width: 49%;
     text-align: center;
     background-color: #880E4F;
-    height: 650px;
+    height: 85vh;
     color: aliceblue;
     box-shadow: 5px 10px 5px 10px #888888;
 }
@@ -41,7 +41,7 @@ h2{
 float: right;
     background-color: #76FF03;
     text-align: center;
-    height: 650px;
+    height: 85vh;
     width: 49%;
     box-shadow: 5px 10px 5px 10px #888888;
 }
@@ -66,4 +66,29 @@ float: right;
 
 h3{
     text-align:center;
+	color:antiquewhite;
 }
+
+.buttonReturn{
+	position:absolute;
+    top:15px;
+    right:15px;
+    font-size:12pt;
+	color: black; 
+	border: 2px solid #76FF03;
+	background-color: white; 
+	border-radius: 12px;
+}
+
+.buttonReturn:hover {
+    background-color: #888888;
+    color: #76FF03;
+}
+
+html {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+	

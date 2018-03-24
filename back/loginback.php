@@ -10,18 +10,18 @@
 			$_SESSION["error"] = "Not a vaild email.";
 		else{
 			$cmd = "SELECT uPass FROM users WHERE email='$_POST[email]'";
-			echo $cmd;
+			// echo $cmd;
             $statement = $conn->prepare($cmd);
             $statement->execute();
             $result = $statement->fetch();
-			echo $result["uPass"];
+			// echo $result["uPass"];
             if ($result && password_verify($_POST["password"], $result["uPass"]))
                 $_SESSION["email"] = $email;
             else
                 $_SESSION["error"] = "Not a valid account.";
         }
 	if(isset($_SESSION["email"])) 
-        header("Location: ../choose.php");             
+        header("Location: ../main.php");             
     else
         header("Location: ../index.php");    
 ?>
