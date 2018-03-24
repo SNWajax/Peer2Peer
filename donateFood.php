@@ -11,23 +11,26 @@
 ?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../hack/css/donate.css">
     </head>
     <body>
         <div class="bdy-main">
-            <h1>Food</h1>
-			<form action="back/submitFoodDonation.php" method="post"> 
+            
+			<form action="back/submitFoodDonation.php" class = "w3-container w3-card-4 w3-light-grey" method="post"> 
+                <h1>Food</h1>
 				<?php
 					while($result = $statement->fetch()){
-						echo $result['name'];
-						echo "<input type='number' name='$result[itemID]' min='0' required value='0'>";
+						echo "<label> . $result['name']; .</label>"
+						echo "<input type='number' class = 'w3-input' w3-border w3-round name='$result[itemID]' min='0' required value='0'>";
 						echo "</br>";
 					}
 				?>
 				<input id = "lng" type="hidden" name = "lng">
 				<input id = "lat" type="hidden" name = "lat">
-				<h4>Confirm location</h4>
-				<div id="map" style="width:400px;height:400px;background:yellow"></div>
+				<h2>Confirm location</h2>
+				<div id="map" class="center" style="width:400px;height:400px;background:yellow"></div>
 				<input type="submit">
 			</form>
         </div>
