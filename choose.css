@@ -1,7 +1,6 @@
 .half {
     width: 100%;
 }
-
 .don {
     float:left; 
     width: 100%;
@@ -63,4 +62,8 @@ float: right;
 .rec:hover h2{
     opacity: 1;
     transition: .5s ease;
+}
+
+h3{
+    text-align:center;
 }
