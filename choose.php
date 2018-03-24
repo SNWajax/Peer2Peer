@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class = "headline">
-            <h1>WELCOME </h1>
+            <h3>WELCOME $fname</h3>
         </div>
         <div class="half don">
             <h1>DONATE</h1>
