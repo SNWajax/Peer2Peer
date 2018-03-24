@@ -20,47 +20,47 @@
         <div class="bdy-main">
             <div class="jumbotron text-center">
                 <?php 
-					echo "<h1>DONATE $fName!</h1>"
+					echo "<h1>DONATE</h1>"
 				?>
                 <h2>That's what keeps us, US!</h2>
             </div>
             <div class="main text-center">
                 <div class="itTags jumbotron-2" id="food">
                     <div class="middle">
-                        <div class="bt">FOOD</div>
+                        FOOD
                     </div>
                 </div>
                 <div class="itTags jumbotron-3" id="clothes">
                     <div class="middle">
-                        <div class="bt">CLOTHES</div>
+                        CLOTHES
                     </div>
                 </div>
                 <div class="itTags jumbotron-4 " id="misItems ">
                     <div class="middle">
-                        <button class="bt">MSCELLANEOUS ITEMS</button>
+                        MSCELLANEOUS ITEMS
                     </div>
                 </div>
             </div>
             <div class="jumbotron text-center">
                 <?php 
-					echo "<h1>RECEIVE $fName!</h1>"
+					echo "<h1>RECEIVE</h1>"
 				?>
                 <h2>We are here for you!</h2>
             </div>
             <div class="main text-center">
                 <div class="itTags jumbotron-2" id="food">
                     <div class="middle">
-                        <div class="bt">FOOD</div>
+                        FOOD
                     </div>
                 </div>
                 <div class="itTags jumbotron-3" id="clothes">
                     <div class="middle">
-                        <div class="bt">CLOTHES</div>
+                        CLOTHES
                     </div>
                 </div>
                 <div class="itTags jumbotron-4 " id="misItems ">
                     <div class="middle">
-                        <button class="bt">MSCELLANEOUS ITEMS</button>
+                        MSCELLANEOUS ITEMS
                     </div>
                 </div>
             </div>

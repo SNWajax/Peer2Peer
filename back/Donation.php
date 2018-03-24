@@ -6,7 +6,6 @@
 	$email = $_SESSION['email'];
 	$counter = 0;
 	foreach($_POST as $key => $value){
-		echo $key . "  ". $value . "<br>";
 		if(intval($value) > 0){
 			$cmd = "INSERT into donation VALUES ('$email',$key,$value,$lng,$lat)";
 			echo $cmd;
@@ -17,5 +16,4 @@
 		if($counter>count($_POST)-3)
 			break;
 	}
-	
 ?>

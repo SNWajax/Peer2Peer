@@ -2,7 +2,7 @@
 	session_start();
 	if(isset($_SESSION["email"])){   
 		$conn = new PDO("mysql:host=localhost;dbname=peer2peer", "root", "");
-		$cmd = "SELECT name, itemID FROM donationfood";
+		$cmd = "SELECT name, size, itemID FROM donationclothing";
 		$statement = $conn->prepare($cmd);
 		$statement->execute();
 	}
@@ -19,10 +19,10 @@
         <div class="bdy-main">
             <div id = "form-ctn">
 				<form action="back/Donation.php" class = "w3-container w3-card-4 w3-light-grey" method="post"> 
-					<h1>Donate Food</h1>
+					<h1>Donate Clothing</h1>
 					<?php
 						while($result = $statement->fetch()){
-							echo "<label> $result[name] </label>";
+							echo "<label> $result[name] $result[size]  </label>";
 							echo "<input type='number' class = 'w3-input' w3-border w3-round name='$result[itemID]' min='0' required value='0'>";
 							echo "</br>";
 						}
@@ -53,6 +53,7 @@
 		});
 		
 		google.maps.event.addListener(map, 'click', function(event){
+			validate();
 			if(markers.length>0)
 				markers[0].setMap(null);
 			inputMarker = {lat: event.latLng.lat(), lng: event.latLng.lng()};

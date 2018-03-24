@@ -4,3 +4,36 @@
     border: 3px solid green;
     padding: 10px;
 }
+.buttonReturn{
+	position:absolute;
+    top:15px;
+    right:15px;
+    font-size:12pt;
+	color: black; 
+	border: 2px solid #76FF03;
+	background-color: white; 
+	border-radius: 12px;
+}
+.buttonReturn:hover {
+    background-color: #888888;
+    color: #76FF03;
+}
+h3,h1{
+	text-align:center;
+}
+.buttondiv {
+	text-align: center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#form-ctn{
+	width: 50%;
+	margin-left:25%;
+	opacity: 0.9;
+}
+html {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
