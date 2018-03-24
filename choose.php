@@ -4,6 +4,9 @@
         <link rel="stylesheet" type="text/css" href="choose.css">
     </head>
     <body>
+        <div class = "headline">
+            <h1>WELCOME </h1>
+        </div>
         <div class="half don">
             <h1>DONATE</h1>
             <h2>FOOD</h2>
