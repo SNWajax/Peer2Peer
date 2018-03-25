@@ -32,7 +32,7 @@
 					<h3>Confirm location</h3>
 					<div id="map" class="center" style="width:400px;height:400px;background:yellow"></div>
 					<div class = "buttondiv">
-						<input id = "submit" type="submit">
+						<input id = "submit" class="w3-input w3-border w3-round" type="submit">
 					</div>
 				</form>
 			</div>

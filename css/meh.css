@@ -45,6 +45,11 @@ h3{
     color: aliceblue;
 }
 
+.jumbotron:hover {
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
 .jumbotron-2:hover {
     transition: .5s ease;
     opacity: 0.3;
@@ -56,6 +61,26 @@ h3{
 }
 
 .jumbotron-4:hover {
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.jumbotron-5:hover {
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.jumbotron-6:hover {
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.jumbotron-7:hover {
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.jumbotron-8:hover {
     transition: .5s ease;
     opacity: 0.3;
 }
@@ -982,6 +1007,59 @@ input[type=text], input[type=password] {
 	/* margin-bottom:30px; */
 	color:#FFF;
 	background-image: url("../images/mi.jpg");
+	background-size: cover;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-color:#616161;
+	margin-top: 100px;
+}
+
+.jumbotron-5{
+	margin-bottom:30px;
+	color:aliceblue;
+	background-image: url("../images/recf.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-color:#616161;
+	margin-top: 0px;
+}
+
+.jumbotron-6{
+	padding-top:160px;
+	padding-bottom:160px;
+	margin-bottom:30px;
+	color:#FFF;
+	background-image: url("../images/recfo.jpg");
+	background-size: cover;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-color:#616161;
+	margin-top: 100px;
+}
+
+.jumbotron-7{
+	padding-top:160px;
+	padding-bottom:160px;
+	margin-bottom:30px;
+	color:#FFF;
+	background-image: url("../images/recc.jpg");
+	background-size: cover;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-color:#616161;
+	margin-top: 100px;
+}
+
+.jumbotron-8{
+	padding-top:160px;
+	padding-bottom:160px;
+	/* margin-bottom:30px; */
+	color:#FFF;
+	background-image: url("../images/rec.jpg");
 	background-size: cover;
 	background-position: 0% 50%;
 	background-repeat: no-repeat;

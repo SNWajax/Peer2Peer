@@ -53,7 +53,7 @@
 					<a class = "aTag" href = "viewDonations.php?loadCategory='Misc'">View All MISC Donations</a>
                 </div>
             </div>
-            <div class="jumbotron text-center">
+            <div class="jumbotron-5 text-center">
                 <?php 
 					echo "<h1>RECEIVE HERE</h1>"
 				?>
@@ -61,19 +61,19 @@
 				<a class = "aTag" href = "viewDonations.php">View All Donations</a>
             </div>
             <div class="main text-center">
-                <div class="itTags jumbotron-2" id="food">
+                <div class="itTags jumbotron-6" id="food">
                     <div class="middle" onclick="location.href='receiveFood.php'">
                         Receive FOOD
                     </div>
 					<a class = "aTag" href = "viewReceivers.php?loadCategory='Food'">View All Food Receivers</a>
                 </div>
-                <div class="itTags jumbotron-3" id="clothes">
+                <div class="itTags jumbotron-7" id="clothes">
                     <div class="middle" onclick="location.href='receiveClothing.php'">
                         Receive CLOTHES
                     </div>
 					<a class = "aTag" href = "viewReceivers.php?loadCategory='Clothing'">View All Clothing Receivers</a>
                 </div>
-                <div class="itTags jumbotron-4 " id="misItems ">
+                <div class="itTags jumbotron-8" id="misItems ">
                     <div class="middle" onclick="location.href='receiveMisc.php'">
                         Receive MISCELLANEOUS ITEMS
                     </div>
