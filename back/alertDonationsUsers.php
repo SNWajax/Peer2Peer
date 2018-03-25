@@ -60,26 +60,40 @@
 	
 	$to = $_SESSION["email"];
 	$subject = "Donor Found";
-
 	$message = "
 	<html>
+	<head>
+	<title>HTML email</title>
+	</head>
 	<body>
-		"Hi $receiverName, \n\n We have an individual, $donnerName who would like to donate $_POST[requestAmount] $_POST[item]. Please feel free to contact them at $_POST[donnerEmail] at the earliest. \n\n Thank you. \n - Peer2Peer";
+		<div>Hi $receiverName, <br><br> We have an individual, $donnerName who would like to donate <b> $_POST[requestAmount] $_POST[item] </b>. <br> Please feel free to contact them at $_POST[donnerEmail] at the earliest. <br><br> #WeAreHereForYou <br><br> Thank you. <br> - Peer2Peer
+		</div>
 	</body>
 	</html>
 	";
-
+	
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 	$headers .= 'From: <webmaster@example.com>' . "\r\n";
 	mail($to,$subject,$message,$headers);
 
-	mail($to,$subject,$txt,$headers);
-	
 	$to = $_POST["donnerEmail"];
 	$subject = "Receiver Found";
-	$txt = "Hi $donnerName, \n\n We have an individual, $receiverName who would like to receive $_POST[requestAmount] $_POST[item]. Please feel free to contact them at $_SESSION[email]. \n\n Thank you. \n - Peer2Peer";
-	$headers = "From: webmaster@example.com" . "\r\n";
-
-	mail($to,$subject,$txt,$headers);
+	$message = "
+	<html>
+	<html>
+	<head>
+	<title>HTML email</title>
+	</head>
+	<body>
+		<p>Hi $donnerName, <br><br> We have an individual, $receiverName who would like to receive <b> $_POST[requestAmount] $_POST[item] </b>. <br> Please feel free to contact them at $_SESSION[email]. <br><br> #FaithInHumanityIsRestored <br><br> Thank you. <br> - Peer2Peer
+		</p>
+	</body>
+	</html>
+	";
+	
+	$headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+	$headers .= 'From: <webmaster@example.com>' . "\r\n";
+	mail($to,$subject,$message,$headers);
 ?>
