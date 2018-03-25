@@ -18,7 +18,7 @@
     <body>
         <div class="bdy-main">
             <div id = "form-ctn">
-				<form action="back/Donation.php" class = "w3-container w3-card-4 w3-light-grey" method="post"> 
+				<form action="back/Receive.php" class = "w3-container w3-card-4 w3-light-grey" method="post"> 
 					<h1>Donate Clothing</h1>
 					<?php
 						while($result = $statement->fetch()){

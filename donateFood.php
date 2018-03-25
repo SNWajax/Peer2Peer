@@ -42,6 +42,12 @@
 				Log out
 			</button>
 		</a>
+		<a id = "missing" href = "others.php">
+			Missing Something?
+		</a>
+		<a id = "return" href = "main.php">
+			Previous Page
+		</a>
     </body>
 	<script>
 	var markers = [];
@@ -53,6 +59,7 @@
 		});
 		
 		google.maps.event.addListener(map, 'click', function(event){
+			validate();
 			if(markers.length>0)
 				markers[0].setMap(null);
 			inputMarker = {lat: event.latLng.lat(), lng: event.latLng.lng()};

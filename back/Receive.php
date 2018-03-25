@@ -4,10 +4,11 @@
 	$lat = $_POST["lat"];
 	$lng = $_POST["lng"];
 	$email = $_SESSION['email'];
+	$itemName = $_POST["itemName"];
 	$counter = 0;
 	foreach($_POST as $key => $value){
 		if(intval($value) > 0){
-			$cmd = "INSERT into donation VALUES ('$email',$key,$value,$lng,$lat)";
+			$cmd = "INSERT into request VALUES ('$email',$key,$value,$lng,$lat)";
 			echo $cmd;
 			$statement = $conn->prepare($cmd);
 			$statement->execute();
@@ -16,6 +17,6 @@
 		if($counter>count($_POST)-3)
 			break;
 	}
-	$_SESSION["error"] = "Thank for your donation";
+	$_SESSION["error"] = "Request Successful";
     header("Location: ../main.php");   
 ?>

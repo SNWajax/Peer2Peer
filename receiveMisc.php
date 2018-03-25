@@ -2,7 +2,7 @@
 	session_start();
 	if(isset($_SESSION["email"])){   
 		$conn = new PDO("mysql:host=localhost;dbname=peer2peer", "root", "");
-		$cmd = "SELECT name, size, itemID FROM donationclothing";
+		$cmd = "SELECT itemName, itemID FROM donationmisc";
 		$statement = $conn->prepare($cmd);
 		$statement->execute();
 	}
@@ -18,11 +18,11 @@
     <body>
         <div class="bdy-main">
             <div id = "form-ctn">
-				<form action="back/Donation.php" class = "w3-container w3-card-4 w3-light-grey" method="post"> 
-					<h1>Donate Clothing</h1>
+				<form action="back/Receive.php" class = "w3-container w3-card-4 w3-light-grey" method="post"> 
+					<h1>Donate Misc</h1>
 					<?php
 						while($result = $statement->fetch()){
-							echo "<label> $result[name] $result[size]  </label>";
+							echo "<label> $result[itemName] </label>";
 							echo "<input type='number' class = 'w3-input' w3-border w3-round name='$result[itemID]' min='0' required value='0'>";
 							echo "</br>";
 						}
@@ -48,7 +48,6 @@
 		<a id = "return" href = "main.php">
 			Previous Page
 		</a>
-		
     </body>
 	<script>
 	var markers = [];

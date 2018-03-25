@@ -14,7 +14,23 @@
 	background-color: white; 
 	border-radius: 12px;
 }
-.buttonReturn:hover {
+#missing{
+	position:fixed;
+    bottom:15px;
+    left:15px;
+    font-size:12pt;
+	color: white; 
+	text-decoration: none !important;
+}
+#return{
+	position:fixed;
+    bottom:15px;
+    right:15px;
+    font-size:12pt;
+	color: white; 
+	text-decoration: none !important;
+}
+.buttonReturn:hover{
     background-color: #888888;
     color: #76FF03;
 }
